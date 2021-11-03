@@ -100,7 +100,14 @@ discuss various questions:
 
 # Workshop Agenda
 
-fill
+The Measuring Network Quality for End-Users for divided into the
+following main topic areas:
+
+- Introduction overviews and a keynote by Vint Cerf
+- Consideration of metrics
+- Cross-layer considerations
+- Synthesis
+- Group conclusions
 
 # Position Papers
 
