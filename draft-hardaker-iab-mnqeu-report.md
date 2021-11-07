@@ -168,9 +168,44 @@ TBD
 
 # Conclusions
 
-## Conclusions discussed during the workshop
+During the final hour of the workshop we gathered statements that
+group thought were summary statements from the 3 day event.  We later
+discarded any that were in contention, resulting in the following
+list.
 
-TBD
+1. New measurements and QoS techniques should not rely only or depend
+   on reading TCP headers
+2. Latency mean and medians are distractions
+3. It is frustrating to measure network services without
+   simultaneously improving those services
+4. RPM is a useful, consumable metric
+5. In many cases, Internet users don’t need more bandwidth, but need
+   better bandwidth
+6. Stakeholder incentives aren’t aligned for easy wins in this space
+7. We need both active and passive measurements – passive measurements
+   can provide historical debugging
+8. A really meaning metric for users is whether the application will
+   work or won’t work
+9. We need better evidence and metrics showing latency is equally or
+   more important than bandwidth to persuade developers 10q. A useful
+   metric for goodness must actually incentive goodness
+11. We need passive measurements to be continuous and archivable and
+    queriable – include reliability/connectivity measurements
+12. A lower latency internet, however achieved would benefit all of
+    humanity
+13. We need a simple tool to fill the gap between ping and speedtest
+14. Bandwidth is necessary but not sufficient
+15. Involve end-user inputs in QoS decisions if they want to be
+    involved
+16. Help applications to make good measurements, do finger pointing
+    and get good evidence
+17. Research done by regulators indicate that users/consumers prefer
+    simple metric per application.. generally whether the application
+    will work or not.
+18. For the future proof networking, measuring ecological impact of
+    measuring material and energy usage is important.
+19. We do not have incontrovertible evidence that latency is more
+    important than bandwidth that would persuade wifi developers
 
 ## Follow on work
 
