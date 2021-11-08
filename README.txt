@@ -65,19 +65,19 @@ Table of Contents
    2.  Workshop Agenda . . . . . . . . . . . . . . . . . . . . . . .   4
    3.  Position Papers . . . . . . . . . . . . . . . . . . . . . . .   4
    4.  Discussions . . . . . . . . . . . . . . . . . . . . . . . . .   6
-     4.1.  Background  . . . . . . . . . . . . . . . . . . . . . . .   6
-     4.2.  Metrics . . . . . . . . . . . . . . . . . . . . . . . . .   6
-     4.3.  Cross-layer considerations  . . . . . . . . . . . . . . .   6
+     4.1.  Introduction  . . . . . . . . . . . . . . . . . . . . . .   6
+     4.2.  Metrics . . . . . . . . . . . . . . . . . . . . . . . . .   7
+     4.3.  Cross-layer considerations  . . . . . . . . . . . . . . .   7
      4.4.  Synthesis . . . . . . . . . . . . . . . . . . . . . . . .   7
    5.  Conclusions . . . . . . . . . . . . . . . . . . . . . . . . .   7
      5.1.  Follow on work  . . . . . . . . . . . . . . . . . . . . .   9
    6.  Security considerations . . . . . . . . . . . . . . . . . . .   9
    7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   9
      7.1.  Normative References  . . . . . . . . . . . . . . . . . .   9
-     7.2.  Informative References  . . . . . . . . . . . . . . . . .   9
-   Appendix A.  Participants List  . . . . . . . . . . . . . . . . .   9
-   Appendix B.  Github Version of this document  . . . . . . . . . .  10
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  10
+     7.2.  Informative References  . . . . . . . . . . . . . . . . .  10
+   Appendix A.  Participants List  . . . . . . . . . . . . . . . . .  10
+   Appendix B.  Github Version of this document  . . . . . . . . . .  11
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  11
 
 1.  Introduction
 
@@ -315,19 +315,19 @@ Internet-Draft                    title                    November 2021
 
 4.  Discussions
 
-4.1.  Background
+   The three day workshop was broken into four separate sections,
+   including introductory material and conclusions, that each played a
+   role in framing the discussions.
 
-   TBD
+4.1.  Introduction
 
-4.2.  Metrics
-
-   TBD
-
-4.3.  Cross-layer considerations
-
-   TBD
-
-
+   The Introduction section allowed participants to introduce and
+   discuss the problem space, existing mechanisms for QoS and QoE
+   measurements.  Also discussed was the interaction between multiple
+   users within the Network, as well as the interaction between multiple
+   layers of the OSI stack.  Some existing measurement works were
+   presented.  Vint Cerf provided a key note support describing the
+   history and importance of the topic.
 
 
 
@@ -338,9 +338,31 @@ Hardaker                   Expires 11 May 2022                  [Page 6]
 Internet-Draft                    title                    November 2021
 
 
+4.2.  Metrics
+
+   The Metrics section of the workshop concentrated on both defining new
+   and existing measures and how they might apply to different sections
+   of the Internet.  The need for improvements to latency and its
+   measurements was heavily discussed, especially for certain classes of
+   users such as live, collaborative content and gaming.
+
+4.3.  Cross-layer considerations
+
+   In the Cross-layer section participants present material and
+   discussed how accurately measuring exactly where problems occur is
+   difficult when many components of a network connection can affect the
+   measurement.  Discussion centered especially on the differences
+   between physically wired and wireless connections and the
+   difficulties of accurately determining problem spots when multiple
+   different network types are responsible the quality.
+
 4.4.  Synthesis
 
-   TBD
+   Finally, in the Synthesis section presentations and discussions
+   concentrated on the next steps likely needed to make forward
+   progress.  Of particular concern is how to bring forward measurements
+   that can make sense to end users trying to make subscription
+   decisions.
 
 5.  Conclusions
 
@@ -364,6 +386,14 @@ Internet-Draft                    title                    November 2021
         rather need "better bandwidth" - i.e., they need other
         improvements to connectivity.
 
+
+
+
+Hardaker                   Expires 11 May 2022                  [Page 7]
+
+Internet-Draft                    title                    November 2021
+
+
    6.   Stakeholder incentives aren't aligned for easy wins in this
         space.  Incentives are needed to motivate improvements in public
         network access.  Measurements may be one step toward driving
@@ -384,15 +414,6 @@ Internet-Draft                    title                    November 2021
    10.  An useful metric for goodness must actually incentive goodness -
         good metrics should actionable to help drive industries toward
         improvement.
-
-
-
-
-
-Hardaker                   Expires 11 May 2022                  [Page 7]
-
-Internet-Draft                    title                    November 2021
-
 
    11.  We need passive measurements to be continuous and archivable and
         queriable - include reliability/connectivity measurements.
@@ -419,6 +440,16 @@ Internet-Draft                    title                    November 2021
    18.  For the future proof networking, measuring ecological impact of
         measuring material and energy usage is important.
 
+
+
+
+
+
+Hardaker                   Expires 11 May 2022                  [Page 8]
+
+Internet-Draft                    title                    November 2021
+
+
    19.  We do not have incontrovertible evidence that any one metric
         (e.g. latency or speed) is more important than others to
         persuade device vendors to concentrate on any one optimization.
@@ -443,13 +474,6 @@ Internet-Draft                    title                    November 2021
 
    4.  Stakeholder incentives aren't aligned for easy wins in this space
 
-
-
-Hardaker                   Expires 11 May 2022                  [Page 8]
-
-Internet-Draft                    title                    November 2021
-
-
 5.1.  Follow on work
 
 6.  Security considerations
@@ -471,6 +495,16 @@ Internet-Draft                    title                    November 2021
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
+
+
+
+
+
+
+Hardaker                   Expires 11 May 2022                  [Page 9]
+
+Internet-Draft                    title                    November 2021
+
 
    [RFC4035]  Arends, R., Austein, R., Larson, M., Massey, D., and S.
               Rose, "Protocol Modifications for the DNS Security
@@ -498,14 +532,6 @@ Appendix A.  Participants List
 
    IAB Members at the Time of Approval
 
-
-
-
-Hardaker                   Expires 11 May 2022                  [Page 9]
-
-Internet-Draft                    title                    November 2021
-
-
    Internet Architecture Board members at the time this document was
    approved for publication were:
 
@@ -526,6 +552,15 @@ Internet-Draft                    title                    November 2021
    Jiankang Yao
 
    Acknowledgements
+
+
+
+
+
+Hardaker                   Expires 11 May 2022                 [Page 10]
+
+Internet-Draft                    title                    November 2021
+
 
    The authors would like to thank the workshop participants, the
    members of the IAB, and the program committee for creating and
@@ -557,4 +592,25 @@ Author's Address
 
 
 
-Hardaker                   Expires 11 May 2022                 [Page 10]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hardaker                   Expires 11 May 2022                 [Page 11]
