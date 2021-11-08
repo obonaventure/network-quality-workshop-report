@@ -150,21 +150,45 @@ following main topic areas:
 
 # Discussions
 
-## Background
+The three day workshop was broken into four separate sections,
+including introductory material and conclusions, that each played a
+role in framing the discussions.
 
-TBD
+## Introduction
+
+The Introduction section allowed participants to introduce and discuss
+the problem space, existing mechanisms for QoS and QoE measurements.
+Also discussed was the interaction between multiple users within the
+Network, as well as the interaction between multiple layers of the OSI
+stack.  Some existing measurement works were presented.  Vint Cerf
+provided a key note support describing the history and importance of
+the topic.
 
 ## Metrics
 
-TBD
+The Metrics section of the workshop concentrated on both defining new
+and existing measures and how they might apply to different sections
+of the Internet.  The need for improvements to latency and its
+measurements was heavily discussed, especially for certain classes of
+users such as live, collaborative content and gaming.
 
 ## Cross-layer considerations
 
-TBD
+In the Cross-layer section participants present material and discussed
+how accurately measuring exactly where problems occur is difficult
+when many components of a network connection can affect the
+measurement.  Discussion centered especially on the differences
+between physically wired and wireless connections and the difficulties
+of accurately determining problem spots when multiple different
+network types are responsible the quality.
 
 ## Synthesis
 
-TBD
+Finally, in the Synthesis section presentations and discussions
+concentrated on the next steps likely needed to make forward
+progress. Of particular concern is how to bring forward measurements
+that can make sense to end users trying to make subscription
+decisions.
 
 # Conclusions
 
