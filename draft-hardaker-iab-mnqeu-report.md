@@ -195,8 +195,9 @@ completeness), resulting in the following list.
    network operators that lower latency is a strong factor in user
    QoE.  However, metrics are lacking to support this statement
    directly.
-10. A useful metric for goodness must actually incentive goodness --
-    good metrics should help drive industry toward improvement.
+10. An useful metric for goodness must actually incentive goodness --
+    good metrics should actionable to help drive industries toward
+    improvement.
 11. We need passive measurements to be continuous and archivable and
     queriable – include reliability/connectivity measurements.
 12. A lower latency internet, however achieved would benefit all end
