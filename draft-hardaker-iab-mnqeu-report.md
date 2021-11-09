@@ -202,44 +202,44 @@ provide context.
 
 ## General statements
 
-1. In many cases, Internet users don’t need more bandwidth, but rather
+1. Bandwidth is necessary but not alone sufficient
+2. In many cases, Internet users don’t need more bandwidth, but rather
    need "better bandwidth" -- i.e., they need other improvements to
-   connectivity.
-2. We need both active and passive measurements – passive measurements
+   their connectivity.
+3. We need both active and passive measurements – passive measurements
    can provide historical debugging.
-3. A really meaning metric for users is whether their application will
-   work properly or fail because of a lack of a  network with
+4. We need passive measurements to be continuous and archivable and
+   queriable – include reliability/connectivity measurements.
+5. A really meaningful metric for users is whether their application
+   will work properly or fail because of a lack of a network with
    sufficient characteristics.
-4. An useful metric for goodness must actually incentive goodness --
+6. An useful metric for goodness must actually incentive goodness --
    good metrics should actionable to help drive industries toward
    improvement.
-5. We need passive measurements to be continuous and archivable and
-   queriable – include reliability/connectivity measurements.
-6. A lower latency internet, however achieved would benefit all end
+7. A lower latency internet, however achieved would benefit all end
    users.
-7. Bandwidth is necessary but not alone sufficient
 
 ## Specific statements about detailed protocols/techniques
 
-8. New measurements and QoS or QoE techniques should not rely only or
-   depend on reading TCP headers
-9. Round trips Per Minute (RPM) is a useful, consumable metric
+8. Round trips Per Minute (RPM) is a useful, consumable metric
+9. We need a usable tool that fills the current gap between network
+   reachability, latency and speed tests.
+10. End-users that want to be involved in QoS decisions should be able
+    to voice their needs and desires.
+11. Applications are needed that can perform and report good quality
+    measurements in order to identify insufficient points in 
+    network access.
+12. Research done by regulators indicate that users/consumers prefer
+    a simple metric per application, which frequently resolves to
+    whether the application will work properly not.
+13. New measurements and QoS or QoE techniques should not rely only or
+    depend on reading TCP headers
 10. It is clear from developers of interactive applications and from
     network operators that lower latency is a strong factor in user
     QoE.  However, metrics are lacking to support this statement
     directly.
-11. We need a usable tool that fills the current gap between network
-    reachability, latency and speed tests.
-12. End-users that want to be involved in QoS decisions should be able
-    to voice their needs and desires.
-13. Applications are needed that can perform and report good quality
-    measurements in order to identify insufficient points in 
-    network access.
-14. Research done by regulators indicate that users/consumers prefer
-    a simple metric per application, which frequently resolves to
-    whether the application will work properly not.
 
-## Problem statements or things to watch out for
+## Problem statements and concerns
 
 15. Latency mean and medians are distractions from better measurements
 16. It is frustrating to only measure network services without
@@ -262,13 +262,11 @@ they were discussed:
 
 1. We do not have incontrovertible evidence that buffer bloat is a
    prevalent problem
-2. We do not have incontrovertible evidence that buffer bloat is a
-   prevalent problem
-3. The measurement needs to support reporting localization in order to
-   find problems
-    1. Detecting a problem is not sufficient if you can’t find the location
-    2. Need more than just english – different localization concerns
-4. Stakeholder incentives aren’t aligned for easy wins in this space
+2. The measurement needs to support reporting localization in order to
+   find problems.  Specifically:
+    - Detecting a problem is not sufficient if you can’t find the location
+    - Need more than just english – different localization concerns
+3. Stakeholder incentives aren’t aligned for easy wins in this space
 
 # Follow on work
 
