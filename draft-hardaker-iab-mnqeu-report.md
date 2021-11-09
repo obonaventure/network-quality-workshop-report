@@ -195,7 +195,10 @@ decisions.
 During the final hour of the workshop we gathered statements that
 group thought were summary statements from the 3 day event.  We later
 discarded any that were in contention (listed further below for
-completeness), resulting in the following list.
+completeness).  For this document, the editor took the original list
+and divided it into rough categories, applied some suggested edits
+discussed on the mailing list and further edited for clarity and to
+provide context.
 
 ## General statements
 
