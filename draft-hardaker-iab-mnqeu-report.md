@@ -1,7 +1,7 @@
 ---
 title: "IAB workshop report: Measuring Network Quality for End-Users"
 abbrev: title
-docname: draft-hardaker-iab-mnqeu-report-00
+docname: draft-hardaker-iab-mnqeu-report-01
 category: info
 ipr: trust200902
 
@@ -104,7 +104,7 @@ The Measuring Network Quality for End-Users for divided into the
 following main topic areas:
 
 - Introduction overviews and a keynote by Vint Cerf
-- Consideration of metrics
+- Metrics considerations
 - Cross-layer considerations
 - Synthesis
 - Group conclusions
@@ -154,7 +154,7 @@ The three day workshop was broken into four separate sections,
 including introductory material and conclusions, that each played a
 role in framing the discussions.
 
-## Introduction
+## Introduction and overviews
 
 The Introduction section allowed participants to introduce and discuss
 the problem space, existing mechanisms for QoS and QoE measurements.
@@ -164,7 +164,7 @@ stack.  Some existing measurement works were presented.  Vint Cerf
 provided a key note support describing the history and importance of
 the topic.
 
-## Metrics
+## Metrics considerations
 
 The Metrics section of the workshop concentrated on both defining new
 and existing measures and how they might apply to different sections
@@ -233,7 +233,7 @@ provide context.
     a simple metric per application, which frequently resolves to
     whether the application will work properly not.
 13. New measurements and QoS or QoE techniques should not rely only or
-    depend on reading TCP headers
+    depend on reading TCP headers.
 10. It is clear from developers of interactive applications and from
     network operators that lower latency is a strong factor in user
     QoE.  However, metrics are lacking to support this statement
