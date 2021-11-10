@@ -4,12 +4,12 @@
 
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
-Intended status: Informational                           7 November 2021
-Expires: 11 May 2022
+Intended status: Informational                           9 November 2021
+Expires: 13 May 2022
 
 
       IAB workshop report: Measuring Network Quality for End-Users
-                   draft-hardaker-iab-mnqeu-report-00
+                   draft-hardaker-iab-mnqeu-report-01
 
 Abstract
 
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 May 2022.
+   This Internet-Draft will expire on 13 May 2022.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Hardaker                   Expires 11 May 2022                  [Page 1]
+Hardaker                   Expires 13 May 2022                  [Page 1]
 
 Internet-Draft                    title                    November 2021
 
@@ -65,19 +65,24 @@ Table of Contents
    2.  Workshop Agenda . . . . . . . . . . . . . . . . . . . . . . .   4
    3.  Position Papers . . . . . . . . . . . . . . . . . . . . . . .   4
    4.  Discussions . . . . . . . . . . . . . . . . . . . . . . . . .   6
-     4.1.  Introduction  . . . . . . . . . . . . . . . . . . . . . .   6
-     4.2.  Metrics . . . . . . . . . . . . . . . . . . . . . . . . .   7
+     4.1.  Introduction and overviews  . . . . . . . . . . . . . . .   6
+     4.2.  Metrics considerations  . . . . . . . . . . . . . . . . .   7
      4.3.  Cross-layer considerations  . . . . . . . . . . . . . . .   7
      4.4.  Synthesis . . . . . . . . . . . . . . . . . . . . . . . .   7
    5.  Conclusions . . . . . . . . . . . . . . . . . . . . . . . . .   7
-     5.1.  Follow on work  . . . . . . . . . . . . . . . . . . . . .   9
-   6.  Security considerations . . . . . . . . . . . . . . . . . . .   9
-   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   9
-     7.1.  Normative References  . . . . . . . . . . . . . . . . . .   9
-     7.2.  Informative References  . . . . . . . . . . . . . . . . .  10
+     5.1.  General statements  . . . . . . . . . . . . . . . . . . .   7
+     5.2.  Specific statements about detailed protocols/
+           techniques  . . . . . . . . . . . . . . . . . . . . . . .   8
+     5.3.  Problem statements and concerns . . . . . . . . . . . . .   8
+     5.4.  No-consensus reached statements . . . . . . . . . . . . .   9
+   6.  Follow on work  . . . . . . . . . . . . . . . . . . . . . . .   9
+   7.  Security considerations . . . . . . . . . . . . . . . . . . .   9
+   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  10
+     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  10
+     8.2.  Informative References  . . . . . . . . . . . . . . . . .  10
    Appendix A.  Participants List  . . . . . . . . . . . . . . . . .  10
-   Appendix B.  Github Version of this document  . . . . . . . . . .  11
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  11
+   Appendix B.  Github Version of this document  . . . . . . . . . .  15
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  15
 
 1.  Introduction
 
@@ -101,18 +106,16 @@ Table of Contents
    routine shopping, and for keeping up with major events.  An
    increasing number of people can access a Gigabit connection, which
    would be hard to imagine a decade ago.  And, thanks to improvements
-   in security, people trust the Internet for both planning their
-   finances and for everyday payments.
 
 
 
-
-
-
-Hardaker                   Expires 11 May 2022                  [Page 2]
+Hardaker                   Expires 13 May 2022                  [Page 2]
 
 Internet-Draft                    title                    November 2021
 
+
+   in security, people trust the Internet for both planning their
+   finances and for everyday payments.
 
    At the same time, some aspects of end-user experience have not
    improved as much.  Many users have typical connection latency that
@@ -159,16 +162,16 @@ Internet-Draft                    title                    November 2021
    *  What are the fundamental properties of a network that contribute
       to good user experience?
 
-   *  What metrics quantify these properties, and how to collect such
-      metrics in a practical way?
 
 
 
-
-Hardaker                   Expires 11 May 2022                  [Page 3]
+Hardaker                   Expires 13 May 2022                  [Page 3]
 
 Internet-Draft                    title                    November 2021
 
+
+   *  What metrics quantify these properties, and how to collect such
+      metrics in a practical way?
 
    *  What are the best practices for interpreting those metrics, and
       incorporating those in a decision making process?
@@ -185,7 +188,7 @@ Internet-Draft                    title                    November 2021
 
    *  Introduction overviews and a keynote by Vint Cerf
 
-   *  Consideration of metrics
+   *  Metrics considerations
 
    *  Cross-layer considerations
 
@@ -215,16 +218,15 @@ Internet-Draft                    title                    November 2021
 
    *  Michael Welzl.  "A Case for Long-Term Statistics"
 
-   *  Joachim Fabini.  "Objective and subjective network quality"
 
 
 
-
-
-Hardaker                   Expires 11 May 2022                  [Page 4]
+Hardaker                   Expires 13 May 2022                  [Page 4]
 
 Internet-Draft                    title                    November 2021
 
+
+   *  Joachim Fabini.  "Objective and subjective network quality"
 
    *  Matt Mathis.  "Preliminary Longitudinal Study of Internet
       Responsiveness"
@@ -275,9 +277,7 @@ Internet-Draft                    title                    November 2021
 
 
 
-
-
-Hardaker                   Expires 11 May 2022                  [Page 5]
+Hardaker                   Expires 13 May 2022                  [Page 5]
 
 Internet-Draft                    title                    November 2021
 
@@ -319,7 +319,7 @@ Internet-Draft                    title                    November 2021
    including introductory material and conclusions, that each played a
    role in framing the discussions.
 
-4.1.  Introduction
+4.1.  Introduction and overviews
 
    The Introduction section allowed participants to introduce and
    discuss the problem space, existing mechanisms for QoS and QoE
@@ -333,12 +333,12 @@ Internet-Draft                    title                    November 2021
 
 
 
-Hardaker                   Expires 11 May 2022                  [Page 6]
+Hardaker                   Expires 13 May 2022                  [Page 6]
 
 Internet-Draft                    title                    November 2021
 
 
-4.2.  Metrics
+4.2.  Metrics considerations
 
    The Metrics section of the workshop concentrated on both defining new
    and existing measures and how they might apply to different sections
@@ -369,90 +369,100 @@ Internet-Draft                    title                    November 2021
    During the final hour of the workshop we gathered statements that
    group thought were summary statements from the 3 day event.  We later
    discarded any that were in contention (listed further below for
-   completeness), resulting in the following list.
+   completeness).  For this document, the editor took the original list
+   and divided it into rough categories, applied some suggested edits
+   discussed on the mailing list and further edited for clarity and to
+   provide context.
 
-   1.   New measurements and QoS or QoE techniques should not rely only
-        or depend on reading TCP headers
+5.1.  General statements
 
-   2.   Latency mean and medians are distractions from better
-        measurements
+   1.  Bandwidth is necessary but not alone sufficient
 
-   3.   It is frustrating to only measure network services without
-        simultaneously improving those services
+   2.  In many cases, Internet users don't need more bandwidth, but
+       rather need "better bandwidth" - i.e., they need other
+       improvements to their connectivity.
 
-   4.   Round trips Per Minute (RPM) is a useful, consumable metric
-
-   5.   In many cases, Internet users don't need more bandwidth, but
-        rather need "better bandwidth" - i.e., they need other
-        improvements to connectivity.
-
+   3.  We need both active and passive measurements - passive
+       measurements can provide historical debugging.
 
 
 
-Hardaker                   Expires 11 May 2022                  [Page 7]
+
+
+Hardaker                   Expires 13 May 2022                  [Page 7]
 
 Internet-Draft                    title                    November 2021
 
 
-   6.   Stakeholder incentives aren't aligned for easy wins in this
-        space.  Incentives are needed to motivate improvements in public
-        network access.  Measurements may be one step toward driving
-        competitive market incentive.
+   4.  We need passive measurements to be continuous and archivable and
+       queriable - include reliability/connectivity measurements.
 
-   7.   We need both active and passive measurements - passive
-        measurements can provide historical debugging.
+   5.  A really meaningful metric for users is whether their application
+       will work properly or fail because of a lack of a network with
+       sufficient characteristics.
 
-   8.   A really meaning metric for users is whether their application
-        will work properly or fail because of a lack of a network with
-        sufficient characteristics.
+   6.  An useful metric for goodness must actually incentive goodness -
+       good metrics should actionable to help drive industries toward
+       improvement.
 
-   9.   It is clear from developers of interactive applications and from
-        network operators that lower latency is a strong factor in user
-        QoE.  However, metrics are lacking to support this statement
-        directly.
+   7.  A lower latency internet, however achieved would benefit all end
+       users.
 
-   10.  An useful metric for goodness must actually incentive goodness -
-        good metrics should actionable to help drive industries toward
-        improvement.
+5.2.  Specific statements about detailed protocols/techniques
 
-   11.  We need passive measurements to be continuous and archivable and
-        queriable - include reliability/connectivity measurements.
+   1.  Round trips Per Minute (RPM) is a useful, consumable metric
 
-   12.  A lower latency internet, however achieved would benefit all end
-        users.
+   2.  We need a usable tool that fills the current gap between network
+       reachability, latency and speed tests.
 
-   13.  We need a usable tool that fills the current gap between network
-        reachability, latency and speed tests.
+   3.  End-users that want to be involved in QoS decisions should be
+       able to voice their needs and desires.
 
-   14.  Bandwidth is necessary but not alone sufficient
+   4.  Applications are needed that can perform and report good quality
+       measurements in order to identify insufficient points in network
+       access.
 
-   15.  End-users that want to be involved in QoS decisions should be
-        able to voice their needs and desires.
+   5.  Research done by regulators indicate that users/consumers prefer
+       a simple metric per application, which frequently resolves to
+       whether the application will work properly not.
 
-   16.  Applications are needed that can perform and report good quality
-        measurements in order to identify insufficient points in network
-        access.
+   6.  New measurements and QoS or QoE techniques should not rely only
+       or depend on reading TCP headers.
 
-   17.  Research done by regulators indicate that users/consumers prefer
-        a simple metric per application, which frequently resolves to
-        whether the application will work properly not.
+   7.  It is clear from developers of interactive applications and from
+       network operators that lower latency is a strong factor in user
+       QoE.  However, metrics are lacking to support this statement
+       directly.
 
-   18.  For the future proof networking, measuring ecological impact of
-        measuring material and energy usage is important.
+5.3.  Problem statements and concerns
 
+   1.  Latency mean and medians are distractions from better
+       measurements
 
-
-
+   2.  It is frustrating to only measure network services without
+       simultaneously improving those services
 
 
-Hardaker                   Expires 11 May 2022                  [Page 8]
+
+
+Hardaker                   Expires 13 May 2022                  [Page 8]
 
 Internet-Draft                    title                    November 2021
 
 
-   19.  We do not have incontrovertible evidence that any one metric
-        (e.g. latency or speed) is more important than others to
-        persuade device vendors to concentrate on any one optimization.
+   3.  Stakeholder incentives aren't aligned for easy wins in this
+       space.  Incentives are needed to motivate improvements in public
+       network access.  Measurements may be one step toward driving
+       competitive market incentive.
+
+   4.  For future-proof networking, measuring ecological impact of
+       measuring material and energy usage is important.
+
+   5.  We do not have incontrovertible evidence that any one metric
+       (e.g. latency or speed) is more important than others to persuade
+       device vendors to concentrate on any one optimization.
+
+5.4.  No-consensus reached statements
 
    Additional statements were recorded that did not have consensus of
    the group at the time, but we list here for completeness about the
@@ -461,22 +471,24 @@ Internet-Draft                    title                    November 2021
    1.  We do not have incontrovertible evidence that buffer bloat is a
        prevalent problem
 
-   2.  We do not have incontrovertible evidence that buffer bloat is a
-       prevalent problem
+   2.  The measurement needs to support reporting localization in order
+       to find problems.  Specifically:
 
-   3.  The measurement needs to support reporting localization in order
-       to find problems
+       *  Detecting a problem is not sufficient if you can't find the
+          location
 
-       1.  Detecting a problem is not sufficient if you can't find the
-           location
+       *  Need more than just english - different localization concerns
 
-       2.  Need more than just english - different localization concerns
+   3.  Stakeholder incentives aren't aligned for easy wins in this space
 
-   4.  Stakeholder incentives aren't aligned for easy wins in this space
+6.  Follow on work
 
-5.1.  Follow on work
+   There was discussion during the workshop about where future work
+   should be performed.  The group agreed that some work could be done
+   more immediately within existing IETF working groups, while other
+   longer-term research may be needed in IRTF groups.
 
-6.  Security considerations
+7.  Security considerations
 
    A few security relevant topics were discussed at the workshop,
    including but not limited to:
@@ -487,24 +499,21 @@ Internet-Draft                    title                    November 2021
    *  How oversubscribed networks can essentially be viewed as a DDoS
       attack.
 
-7.  References
 
-7.1.  Normative References
+
+Hardaker                   Expires 13 May 2022                  [Page 9]
+
+Internet-Draft                    title                    November 2021
+
+
+8.  References
+
+8.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
-
-
-
-
-
-
-Hardaker                   Expires 11 May 2022                  [Page 9]
-
-Internet-Draft                    title                    November 2021
-
 
    [RFC4035]  Arends, R., Austein, R., Larson, M., Massey, D., and S.
               Rose, "Protocol Modifications for the DNS Security
@@ -516,7 +525,7 @@ Internet-Draft                    title                    November 2021
               Existence", RFC 5155, DOI 10.17487/RFC5155, March 2008,
               <https://www.rfc-editor.org/info/rfc5155>.
 
-7.2.  Informative References
+8.2.  Informative References
 
    [RFC1111]  Postel, J., "Request for comments on Request for Comments:
               Instructions to RFC authors", RFC 1111,
@@ -528,7 +537,216 @@ Appendix A.  Participants List
    The following is a list of participants attended the workshop over a
    remote connection:
 
-   *  list...
+   *  Ahmed Aldabbagh
+
+   *  Al Morton
+
+   *  Alexander Clemm
+
+   *  Alvaro Retana
+
+   *  Anna Brunstrom
+
+   *  Balazs Varga
+
+   *  Bjoern Ivar Teigen
+
+   *  Bob Briscoe
+
+   *  Brandon Schlinker
+
+
+
+Hardaker                   Expires 13 May 2022                 [Page 10]
+
+Internet-Draft                    title                    November 2021
+
+
+   *  Bren Tully Walsh
+
+   *  Christoph Paasch
+
+   *  Cindy Morgan
+
+   *  Cullen Jennings
+
+   *  Dan Siemon
+
+   *  Dave Taht
+
+   *  David Reed
+
+   *  David Schinazi
+
+   *  Djamel Bousaber
+
+   *  Eve Schooler
+
+   *  Evgeny Khorov
+
+   *  Francois Michel
+
+   *  Gavin Young
+
+   *  Geoff Huston
+
+   *  Gino Dion
+
+   *  Gorry Fairhurst
+
+   *  Greg Mirsky
+
+   *  Greg White
+
+   *  Jana Iyengar
+
+   *  Jared Mauch
+
+   *  Jari Arkko
+
+   *  Jason Livingood
+
+   *  Jiankang Yao
+
+   *  Jim Gettys
+
+
+
+
+Hardaker                   Expires 13 May 2022                 [Page 11]
+
+Internet-Draft                    title                    November 2021
+
+
+   *  Jinous Shafiei
+
+   *  Joachim Fabini
+
+   *  John Cioffi
+
+   *  Jonathan Foulkes
+
+   *  Joon Kim
+
+   *  Joris Herbots
+
+   *  Kalevi Kilkki
+
+   *  Karthik Sundaresan
+
+   *  Kathleen Nichols
+
+   *  Keith Winstein
+
+   *  Ken Kerpez
+
+   *  Kenjiro Cho
+
+   *  Koen De Schepper
+
+   *  Kristen McIntyre
+
+   *  Kyle MacMillan
+
+   *  Lai Yi Ohlsen
+
+   *  Lars Eggert
+
+   *  Levi Perigo
+
+   *  Lisong Xu
+
+   *  Lucas Pardue
+
+   *  Luis M.  Contreras
+
+   *  Mat Ford
+
+   *  Matt Mathis
+
+   *  Michael Welzl
+
+
+
+
+Hardaker                   Expires 13 May 2022                 [Page 12]
+
+Internet-Draft                    title                    November 2021
+
+
+   *  Mikhail Liubogoshchev
+
+   *  Mingrui Zhang
+
+   *  Neil Davies
+
+   *  Nick Feamster
+
+   *  Nicolas (Tessares)
+
+   *  Olivier Bonaventure
+
+   *  Omer Shapira
+
+   *  Pedro Casas
+
+   *  Peter Thompson
+
+   *  Praveen Balasubramanian
+
+   *  Rajat Ghai
+
+   *  Randall Meyer
+
+   *  Rich Brown
+
+   *  Rick Taylor
+
+   *  Roberto
+
+   *  Robin Marx
+
+   *  Russ White
+
+   *  Sam Crawford
+
+   *  Satadal Sengupta
+
+   *  Shapelez
+
+   *  Sharat Madanapalli
+
+   *  Steve Christianson
+
+   *  Stuart Cheshire
+
+   *  Szilveszter Nadas
+
+
+
+
+Hardaker                   Expires 13 May 2022                 [Page 13]
+
+Internet-Draft                    title                    November 2021
+
+
+   *  Toerless Eckert
+
+   *  Toke Hoeiland-Joergensen
+
+   *  Tommy Pauly
+
+   *  Vesna Manojlovic
+
+   *  Vidhi Goel
+
+   *  Vijay Sivaraman
+
+   *  Vint Cerf
+
+   *  Wes Hardaker
+
+   *  Zhenbin Li
 
    IAB Members at the Time of Approval
 
@@ -553,18 +771,20 @@ Appendix A.  Participants List
 
    Acknowledgements
 
-
-
-
-
-Hardaker                   Expires 11 May 2022                 [Page 10]
-
-Internet-Draft                    title                    November 2021
-
-
    The authors would like to thank the workshop participants, the
    members of the IAB, and the program committee for creating and
    participating in many interesting discussions.
+
+
+
+
+
+
+
+Hardaker                   Expires 13 May 2022                 [Page 14]
+
+Internet-Draft                    title                    November 2021
+
 
 Appendix B.  Github Version of this document
 
@@ -613,4 +833,8 @@ Author's Address
 
 
 
-Hardaker                   Expires 11 May 2022                 [Page 11]
+
+
+
+
+Hardaker                   Expires 13 May 2022                 [Page 15]
