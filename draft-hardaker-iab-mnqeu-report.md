@@ -352,7 +352,7 @@ The following is a list of participants attended the workshop over a remote conn
 - Mingrui Zhang
 - Neil Davies
 - Nick Feamster
-- Nicolas (Tessares)
+- Nicolas Keukeleire
 - Olivier Bonaventure
 - Omer Shapira
 - Pedro Casas
